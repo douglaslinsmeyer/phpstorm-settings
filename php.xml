@@ -290,8 +290,8 @@
         </phpinfo>
       </interpreter>
       <interpreter name="PHP 5.6">
-        <phpinfo binary_type="PHP" php_cgi="/usr/local/Cellar/php56/5.6.11_2/bin/php-cgi" php_cli="/usr/local/Cellar/php56/5.6.11_2/bin/php" path_separator=":" remote_host="127.0.0.1" version="5.6.11">
-          <additional_php_ini>/usr/local/etc/php/5.6/conf.d/ext-igbinary.ini, /usr/local/etc/php/5.6/conf.d/ext-imagick.ini, /usr/local/etc/php/5.6/conf.d/ext-mcrypt.ini, /usr/local/etc/php/5.6/conf.d/ext-memcached.ini, /usr/local/etc/php/5.6/conf.d/ext-mongo.ini, /usr/local/etc/php/5.6/conf.d/ext-xdebug.ini</additional_php_ini>
+        <phpinfo binary_type="PHP" php_cgi="/usr/local/Cellar/php56/5.6.18/bin/php-cgi" php_cli="/usr/local/Cellar/php56/5.6.18/bin/php" path_separator=":" remote_host="127.0.0.1" version="5.6.18">
+          <additional_php_ini>/usr/local/etc/php/5.6/conf.d/ext-igbinary.ini, /usr/local/etc/php/5.6/conf.d/ext-imagick.ini, /usr/local/etc/php/5.6/conf.d/ext-intl.ini, /usr/local/etc/php/5.6/conf.d/ext-mcrypt.ini, /usr/local/etc/php/5.6/conf.d/ext-memcached.ini, /usr/local/etc/php/5.6/conf.d/ext-mongo.ini, /usr/local/etc/php/5.6/conf.d/ext-xdebug.ini</additional_php_ini>
           <configuration_file>/usr/local/etc/php/5.6/php.ini</configuration_file>
           <configuration_options>
             <configuration_option name="SMTP" value="localhost" />
@@ -345,7 +345,7 @@
             <configuration_option name="exif.encode_unicode" value="ISO-8859-15" />
             <configuration_option name="exit_on_timeout" value="0" />
             <configuration_option name="expose_php" value="1" />
-            <configuration_option name="extension_dir" value="/usr/local/Cellar/php56/5.6.11_2/lib/php/extensions/no-debug-non-zts-20131226" />
+            <configuration_option name="extension_dir" value="/usr/local/Cellar/php56/5.6.18/lib/php/extensions/no-debug-non-zts-20131226" />
             <configuration_option name="file_uploads" value="1" />
             <configuration_option name="filter.default" value="unsafe_raw" />
             <configuration_option name="filter.default_flags" value="" />
@@ -366,10 +366,14 @@
             <configuration_option name="ignore_user_abort" value="0" />
             <configuration_option name="imagick.locale_fix" value="0" />
             <configuration_option name="imagick.progress_monitor" value="0" />
+            <configuration_option name="imagick.skip_version_check" value="0" />
             <configuration_option name="implicit_flush" value="1" />
-            <configuration_option name="include_path" value=".:/usr/local/Cellar/php56/5.6.11_2/lib/php" />
+            <configuration_option name="include_path" value=".:" />
             <configuration_option name="input_encoding" value="" />
             <configuration_option name="internal_encoding" value="" />
+            <configuration_option name="intl.default_locale" value="" />
+            <configuration_option name="intl.error_level" value="0" />
+            <configuration_option name="intl.use_exceptions" value="0" />
             <configuration_option name="ldap.max_links" value="-1" />
             <configuration_option name="log_errors" value="1" />
             <configuration_option name="log_errors_max_len" value="1024" />
@@ -542,8 +546,8 @@
             <configuration_option name="xdebug.cli_color" value="0" />
             <configuration_option name="xdebug.collect_assignments" value="0" />
             <configuration_option name="xdebug.collect_includes" value="1" />
-            <configuration_option name="xdebug.collect_params" value="0" />
-            <configuration_option name="xdebug.collect_return" value="0" />
+            <configuration_option name="xdebug.collect_params" value="1" />
+            <configuration_option name="xdebug.collect_return" value="1" />
             <configuration_option name="xdebug.collect_vars" value="0" />
             <configuration_option name="xdebug.coverage_enable" value="1" />
             <configuration_option name="xdebug.default_enable" value="1" />
@@ -563,8 +567,8 @@
             <configuration_option name="xdebug.force_display_errors" value="0" />
             <configuration_option name="xdebug.force_error_reporting" value="0" />
             <configuration_option name="xdebug.halt_level" value="0" />
-            <configuration_option name="xdebug.idekey" value="" />
-            <configuration_option name="xdebug.max_nesting_level" value="500" />
+            <configuration_option name="xdebug.idekey" value="PHPSTORM" />
+            <configuration_option name="xdebug.max_nesting_level" value="1000" />
             <configuration_option name="xdebug.max_stack_frames" value="-1" />
             <configuration_option name="xdebug.overload_var_dump" value="1" />
             <configuration_option name="xdebug.profiler_aggregate" value="0" />
@@ -575,7 +579,7 @@
             <configuration_option name="xdebug.profiler_output_dir" value="/var/tmp/" />
             <configuration_option name="xdebug.profiler_output_name" value="cachegrind.out.%p" />
             <configuration_option name="xdebug.remote_autostart" value="1" />
-            <configuration_option name="xdebug.remote_connect_back" value="0" />
+            <configuration_option name="xdebug.remote_connect_back" value="1" />
             <configuration_option name="xdebug.remote_cookie_expire_time" value="3600" />
             <configuration_option name="xdebug.remote_enable" value="1" />
             <configuration_option name="xdebug.remote_handler" value="dbgp" />
@@ -609,7 +613,7 @@
             <configuration_option name="zlib.output_handler" value="" />
           </configuration_options>
           <debuggers>
-            <debugger_info debugger="xdebug" debugger_version="2.3.2">
+            <debugger_info debugger="xdebug" debugger_version="2.3.3">
               <debug_extensions />
             </debugger_info>
           </debuggers>
@@ -640,6 +644,7 @@
             <extension name="iconv" />
             <extension name="igbinary" />
             <extension name="imagick" />
+            <extension name="intl" />
             <extension name="json" />
             <extension name="ldap" />
             <extension name="libxml" />
