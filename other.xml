@@ -21,7 +21,9 @@
     <show-plugin-conflict-dialog value="false" />
   </component>
   <component name="NodeJsLocalInterpreters">
-    <local-interpreter path="/usr/local/bin/node" />
+    <local-interpreter path="/usr/local/bin/node">
+      <version-cache version="5.3.0" last-modified="1450291370000" />
+    </local-interpreter>
   </component>
   <component name="PhpRefactoringSettings">
     <option name="EXTRACT_METHOD_DEFAULT_VISIBILITY" value="private" />
