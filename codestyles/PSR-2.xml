@@ -2,6 +2,9 @@
   <MultiMarkdownCodeStyleSettings>
     <option name="RIGHT_MARGIN" value="72" />
   </MultiMarkdownCodeStyleSettings>
+  <PHPCodeStyleSettings>
+    <option name="PHPDOC_BLANK_LINES_AROUND_PARAMETERS" value="true" />
+  </PHPCodeStyleSettings>
   <DBN-PSQL>
     <case-options enabled="false">
       <option name="KEYWORD_CASE" value="lower" />
