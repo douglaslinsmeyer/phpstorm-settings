@@ -11,7 +11,7 @@
   </component>
   <component name="PhpInterpreters">
     <interpreters>
-      <interpreter home="/usr/local/bin/php" id="08769bda-1bb4-4f5b-92f8-13c73e3ea8f7" name="PHP 5.6" debugger_id="php.debugger.XDebug" />
+      <interpreter home="/usr/local/bin/php" id="08769bda-1bb4-4f5b-92f8-13c73e3ea8f7" name="PHP 7" debugger_id="php.debugger.XDebug" />
       <interpreter home="/usr/bin/php" id="6aeeec44-5c9f-40ae-bf57-84d635a2aa2b" name="PHP 5.5" debugger_id="php.debugger.XDebug" />
     </interpreters>
   </component>
@@ -289,21 +289,20 @@
           </loaded_extensions>
         </phpinfo>
       </interpreter>
-      <interpreter name="PHP 5.6">
-        <phpinfo binary_type="PHP" php_cgi="/usr/local/Cellar/php56/5.6.18/bin/php-cgi" php_cli="/usr/local/Cellar/php56/5.6.18/bin/php" path_separator=":" remote_host="127.0.0.1" version="5.6.18">
-          <additional_php_ini>/usr/local/etc/php/5.6/conf.d/ext-igbinary.ini, /usr/local/etc/php/5.6/conf.d/ext-imagick.ini, /usr/local/etc/php/5.6/conf.d/ext-intl.ini, /usr/local/etc/php/5.6/conf.d/ext-mcrypt.ini, /usr/local/etc/php/5.6/conf.d/ext-memcached.ini, /usr/local/etc/php/5.6/conf.d/ext-mongo.ini, /usr/local/etc/php/5.6/conf.d/ext-xdebug.ini</additional_php_ini>
-          <configuration_file>/usr/local/etc/php/5.6/php.ini</configuration_file>
+      <interpreter name="PHP 7">
+        <phpinfo binary_type="PHP" php_cgi="/usr/local/Cellar/php70/7.0.6/bin/php-cgi" php_cli="/usr/local/Cellar/php70/7.0.6/bin/php" path_separator=":" remote_host="127.0.0.1" version="7.0.6">
+          <additional_php_ini>/usr/local/etc/php/7.0/conf.d/ext-intl.ini, /usr/local/etc/php/7.0/conf.d/ext-mcrypt.ini, /usr/local/etc/php/7.0/conf.d/ext-xdebug.ini</additional_php_ini>
+          <configuration_file>/usr/local/etc/php/7.0/php.ini</configuration_file>
           <configuration_options>
             <configuration_option name="SMTP" value="localhost" />
             <configuration_option name="allow_url_fopen" value="1" />
             <configuration_option name="allow_url_include" value="" />
-            <configuration_option name="always_populate_raw_post_data" value="0" />
             <configuration_option name="arg_separator.input" value="&amp;" />
             <configuration_option name="arg_separator.output" value="&amp;" />
-            <configuration_option name="asp_tags" value="" />
             <configuration_option name="assert.active" value="1" />
             <configuration_option name="assert.bail" value="0" />
             <configuration_option name="assert.callback" value="" />
+            <configuration_option name="assert.exception" value="0" />
             <configuration_option name="assert.quiet_eval" value="0" />
             <configuration_option name="assert.warning" value="1" />
             <configuration_option name="auto_append_file" value="" />
@@ -319,7 +318,7 @@
             <configuration_option name="date.default_longitude" value="35.2333" />
             <configuration_option name="date.sunrise_zenith" value="90.583333" />
             <configuration_option name="date.sunset_zenith" value="90.583333" />
-            <configuration_option name="date.timezone" value="America/Phoenix" />
+            <configuration_option name="date.timezone" value="" />
             <configuration_option name="dba.default_handler" value="flatfile" />
             <configuration_option name="default_charset" value="UTF-8" />
             <configuration_option name="default_mimetype" value="text/html" />
@@ -345,7 +344,7 @@
             <configuration_option name="exif.encode_unicode" value="ISO-8859-15" />
             <configuration_option name="exit_on_timeout" value="0" />
             <configuration_option name="expose_php" value="1" />
-            <configuration_option name="extension_dir" value="/usr/local/Cellar/php56/5.6.18/lib/php/extensions/no-debug-non-zts-20131226" />
+            <configuration_option name="extension_dir" value="/usr/local/Cellar/php70/7.0.6/lib/php/extensions/no-debug-non-zts-20151012" />
             <configuration_option name="file_uploads" value="1" />
             <configuration_option name="filter.default" value="unsafe_raw" />
             <configuration_option name="filter.default_flags" value="" />
@@ -360,13 +359,9 @@
             <configuration_option name="iconv.input_encoding" value="" />
             <configuration_option name="iconv.internal_encoding" value="" />
             <configuration_option name="iconv.output_encoding" value="" />
-            <configuration_option name="igbinary.compact_strings" value="1" />
             <configuration_option name="ignore_repeated_errors" value="" />
             <configuration_option name="ignore_repeated_source" value="" />
             <configuration_option name="ignore_user_abort" value="0" />
-            <configuration_option name="imagick.locale_fix" value="0" />
-            <configuration_option name="imagick.progress_monitor" value="0" />
-            <configuration_option name="imagick.skip_version_check" value="0" />
             <configuration_option name="implicit_flush" value="1" />
             <configuration_option name="include_path" value=".:" />
             <configuration_option name="input_encoding" value="" />
@@ -397,46 +392,7 @@
             <configuration_option name="mbstring.substitute_character" value="" />
             <configuration_option name="mcrypt.algorithms_dir" value="" />
             <configuration_option name="mcrypt.modes_dir" value="" />
-            <configuration_option name="memcached.compression_factor" value="1.3" />
-            <configuration_option name="memcached.compression_threshold" value="2000" />
-            <configuration_option name="memcached.compression_type" value="fastlz" />
-            <configuration_option name="memcached.serializer" value="igbinary" />
-            <configuration_option name="memcached.sess_binary" value="" />
-            <configuration_option name="memcached.sess_connect_timeout" value="1000" />
-            <configuration_option name="memcached.sess_consistent_hash" value="" />
-            <configuration_option name="memcached.sess_lock_expire" value="0" />
-            <configuration_option name="memcached.sess_lock_max_wait" value="0" />
-            <configuration_option name="memcached.sess_lock_wait" value="150000" />
-            <configuration_option name="memcached.sess_locking" value="1" />
-            <configuration_option name="memcached.sess_number_of_replicas" value="0" />
-            <configuration_option name="memcached.sess_prefix" value="memc.sess.key." />
-            <configuration_option name="memcached.sess_randomize_replica_read" value="" />
-            <configuration_option name="memcached.sess_remove_failed" value="1" />
-            <configuration_option name="memcached.sess_sasl_password" value="" />
-            <configuration_option name="memcached.sess_sasl_username" value="" />
-            <configuration_option name="memcached.store_retry_count" value="2" />
-            <configuration_option name="memcached.use_sasl" value="" />
-            <configuration_option name="memory_limit" value="1024M" />
-            <configuration_option name="mongo.allow_empty_keys" value="0" />
-            <configuration_option name="mongo.chunk_size" value="261120" />
-            <configuration_option name="mongo.cmd" value="$" />
-            <configuration_option name="mongo.default_host" value="localhost" />
-            <configuration_option name="mongo.default_port" value="27017" />
-            <configuration_option name="mongo.is_master_interval" value="15" />
-            <configuration_option name="mongo.long_as_object" value="0" />
-            <configuration_option name="mongo.native_long" value="1" />
-            <configuration_option name="mongo.ping_interval" value="5" />
-            <configuration_option name="mysql.allow_local_infile" value="1" />
-            <configuration_option name="mysql.allow_persistent" value="1" />
-            <configuration_option name="mysql.connect_timeout" value="60" />
-            <configuration_option name="mysql.default_host" value="" />
-            <configuration_option name="mysql.default_password" value="" />
-            <configuration_option name="mysql.default_port" value="" />
-            <configuration_option name="mysql.default_socket" value="/tmp/mysql.sock" />
-            <configuration_option name="mysql.default_user" value="" />
-            <configuration_option name="mysql.max_links" value="-1" />
-            <configuration_option name="mysql.max_persistent" value="-1" />
-            <configuration_option name="mysql.trace_mode" value="" />
+            <configuration_option name="memory_limit" value="128M" />
             <configuration_option name="mysqli.allow_local_infile" value="1" />
             <configuration_option name="mysqli.allow_persistent" value="1" />
             <configuration_option name="mysqli.default_host" value="" />
@@ -476,6 +432,7 @@
             <configuration_option name="output_encoding" value="" />
             <configuration_option name="output_handler" value="" />
             <configuration_option name="pcre.backtrack_limit" value="1000000" />
+            <configuration_option name="pcre.jit" value="1" />
             <configuration_option name="pcre.recursion_limit" value="100000" />
             <configuration_option name="pdo_mysql.default_socket" value="/tmp/mysql.sock" />
             <configuration_option name="phar.cache_list" value="" />
@@ -507,6 +464,7 @@
             <configuration_option name="session.gc_probability" value="1" />
             <configuration_option name="session.hash_bits_per_character" value="5" />
             <configuration_option name="session.hash_function" value="0" />
+            <configuration_option name="session.lazy_write" value="1" />
             <configuration_option name="session.name" value="PHPSESSID" />
             <configuration_option name="session.referer_check" value="" />
             <configuration_option name="session.save_handler" value="files" />
@@ -546,8 +504,8 @@
             <configuration_option name="xdebug.cli_color" value="0" />
             <configuration_option name="xdebug.collect_assignments" value="0" />
             <configuration_option name="xdebug.collect_includes" value="1" />
-            <configuration_option name="xdebug.collect_params" value="1" />
-            <configuration_option name="xdebug.collect_return" value="1" />
+            <configuration_option name="xdebug.collect_params" value="0" />
+            <configuration_option name="xdebug.collect_return" value="0" />
             <configuration_option name="xdebug.collect_vars" value="0" />
             <configuration_option name="xdebug.coverage_enable" value="1" />
             <configuration_option name="xdebug.default_enable" value="1" />
@@ -567,10 +525,10 @@
             <configuration_option name="xdebug.force_display_errors" value="0" />
             <configuration_option name="xdebug.force_error_reporting" value="0" />
             <configuration_option name="xdebug.halt_level" value="0" />
-            <configuration_option name="xdebug.idekey" value="PHPSTORM" />
-            <configuration_option name="xdebug.max_nesting_level" value="1000" />
+            <configuration_option name="xdebug.idekey" value="" />
+            <configuration_option name="xdebug.max_nesting_level" value="256" />
             <configuration_option name="xdebug.max_stack_frames" value="-1" />
-            <configuration_option name="xdebug.overload_var_dump" value="1" />
+            <configuration_option name="xdebug.overload_var_dump" value="2" />
             <configuration_option name="xdebug.profiler_aggregate" value="0" />
             <configuration_option name="xdebug.profiler_append" value="0" />
             <configuration_option name="xdebug.profiler_enable" value="0" />
@@ -578,16 +536,18 @@
             <configuration_option name="xdebug.profiler_enable_trigger_value" value="" />
             <configuration_option name="xdebug.profiler_output_dir" value="/var/tmp/" />
             <configuration_option name="xdebug.profiler_output_name" value="cachegrind.out.%p" />
-            <configuration_option name="xdebug.remote_autostart" value="1" />
-            <configuration_option name="xdebug.remote_connect_back" value="1" />
+            <configuration_option name="xdebug.remote_addr_header" value="" />
+            <configuration_option name="xdebug.remote_autostart" value="0" />
+            <configuration_option name="xdebug.remote_connect_back" value="0" />
             <configuration_option name="xdebug.remote_cookie_expire_time" value="3600" />
-            <configuration_option name="xdebug.remote_enable" value="1" />
+            <configuration_option name="xdebug.remote_enable" value="0" />
             <configuration_option name="xdebug.remote_handler" value="dbgp" />
-            <configuration_option name="xdebug.remote_host" value="127.0.0.1" />
+            <configuration_option name="xdebug.remote_host" value="localhost" />
             <configuration_option name="xdebug.remote_log" value="" />
             <configuration_option name="xdebug.remote_mode" value="req" />
             <configuration_option name="xdebug.remote_port" value="9000" />
             <configuration_option name="xdebug.scream" value="0" />
+            <configuration_option name="xdebug.show_error_trace" value="0" />
             <configuration_option name="xdebug.show_exception_trace" value="0" />
             <configuration_option name="xdebug.show_local_vars" value="0" />
             <configuration_option name="xdebug.show_mem_delta" value="0" />
@@ -602,7 +562,7 @@
             <configuration_option name="xdebug.var_display_max_depth" value="3" />
             <configuration_option name="xmlrpc_error_number" value="0" />
             <configuration_option name="xmlrpc_errors" value="0" />
-            <configuration_option name="xsl.security_prefs" value="44" />
+            <configuration_option name="zend.assertions" value="1" />
             <configuration_option name="zend.detect_unicode" value="1" />
             <configuration_option name="zend.enable_gc" value="1" />
             <configuration_option name="zend.multibyte" value="0" />
@@ -613,7 +573,7 @@
             <configuration_option name="zlib.output_handler" value="" />
           </configuration_options>
           <debuggers>
-            <debugger_info debugger="xdebug" debugger_version="2.3.3">
+            <debugger_info debugger="xdebug" debugger_version="2.4.0">
               <debug_extensions />
             </debugger_info>
           </debuggers>
@@ -633,7 +593,6 @@
             <extension name="date" />
             <extension name="dba" />
             <extension name="dom" />
-            <extension name="ereg" />
             <extension name="exif" />
             <extension name="fileinfo" />
             <extension name="filter" />
@@ -642,18 +601,12 @@
             <extension name="gettext" />
             <extension name="hash" />
             <extension name="iconv" />
-            <extension name="igbinary" />
-            <extension name="imagick" />
             <extension name="intl" />
             <extension name="json" />
             <extension name="ldap" />
             <extension name="libxml" />
             <extension name="mbstring" />
             <extension name="mcrypt" />
-            <extension name="memcached" />
-            <extension name="mhash" />
-            <extension name="mongo" />
-            <extension name="mysql" />
             <extension name="mysqli" />
             <extension name="mysqlnd" />
             <extension name="odbc" />
