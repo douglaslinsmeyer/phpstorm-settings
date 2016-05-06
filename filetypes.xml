@@ -13,6 +13,8 @@
       <mapping ext="pkb" type="DBN-PSQL" />
       <mapping ext="vw" type="DBN-SQL" />
       <mapping ext="info" type="Ini" />
+      <mapping ext="properties" type="Ini" />
+      <mapping ext="dist" type="Ini" />
       <mapping ext="engine" type="PHP" />
       <mapping ext="test" type="PHP" />
       <mapping ext="profile" type="PHP" />
