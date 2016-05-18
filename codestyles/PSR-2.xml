@@ -1,7 +1,7 @@
 <code_scheme name="PSR-2">
-  <MultiMarkdownCodeStyleSettings>
+  <MarkdownNavigatorCodeStyleSettings>
     <option name="RIGHT_MARGIN" value="72" />
-  </MultiMarkdownCodeStyleSettings>
+  </MarkdownNavigatorCodeStyleSettings>
   <PHPCodeStyleSettings>
     <option name="PHPDOC_BLANK_LINES_AROUND_PARAMETERS" value="true" />
   </PHPCodeStyleSettings>
