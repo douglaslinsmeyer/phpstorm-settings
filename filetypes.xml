@@ -12,6 +12,7 @@
       <mapping ext="pkg" type="DBN-PSQL" />
       <mapping ext="pkb" type="DBN-PSQL" />
       <mapping ext="vw" type="DBN-SQL" />
+      <mapping pattern=".ebignore" type="Git exclude file" />
       <mapping ext="info" type="Ini" />
       <mapping ext="properties" type="Ini" />
       <mapping ext="dist" type="Ini" />
